@@ -1,0 +1,22 @@
+
+
+.home{
+    
+    padding-top: 60px;
+    /*de aqui hacia abajo los tengo que quitar*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*ajustes por mientras, hacer un componente categoria y uno head*/
+
+
+
+/* Ajustes para mi pagiga de buscar por genero, es un grid */
+/*
+display: grid;
+grid-template-columns: repeat(auto-fill, 160px);
+gap: 40px;
+justify-content: center;
+*/    

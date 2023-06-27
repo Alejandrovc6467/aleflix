@@ -11,6 +11,39 @@ body {
    background-position: center;/*centro la imagen*/
    background-attachment: fixed;
    background-size: cover;/**/
+   
 }
+
+
+
+/*/////////////////////  MODOFICACIONES AL SCROLL BAR ORIGINAL   /////////////////////////////////*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Toda la linea */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+ 
+/* indicador */
+::-webkit-scrollbar-thumb {
+  background: rgba(152, 152, 152, 0.399); 
+  border-radius: 10px;
+  
+  
+}
+
+/* indicador hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(67, 93, 114, 0.574); 
+}
+
+
+/*MODOFICACIONES AL SCROLL BAR ORIGINAL   /////////////////////////////////*/
+
+
 
 

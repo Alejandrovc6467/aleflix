@@ -3,6 +3,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .navbar{
@@ -17,9 +18,12 @@ header {
 
 .navbar.scrollDown{
     /* background-color: rgba(0, 0, 0, 0.805); */
-    background-color: rgba(0, 0, 0, 0.284);
+    background-color: rgba(0, 0, 0, 0.56);
+   
    
     backdrop-filter: blur(8px);
+
+    
 }
 
 .navbar_izq{
@@ -30,9 +34,9 @@ header {
 }
 
 .toggle_btn{
-    color: white;
+    color: rgba(255, 255, 255, 0.708);
     font-size: 25px;
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .toggle_btn:hover{
@@ -44,8 +48,11 @@ header {
 
 .logo img{
     width: 110px;
-    margin-left: 20px;
-    margin-top: 10px;
+    position: absolute;
+    top: 7px;
+    left: 60px;
+    /* margin-left: 20px; */
+    /* margin-top: 10px; */
    
 }
 
@@ -107,11 +114,11 @@ header {
 .dropdown_menu{
     position: absolute;
     left: -250px;
-    background-color: rgba(0, 0, 0, 0.284);
+    background-color: rgba(0, 0, 0, 0.56);
    
     backdrop-filter: blur(8px);
     width: 250px;
-    border-radius: 20px;
+   
     height: 100vh;
     transition: 0.5s;
 
@@ -143,17 +150,19 @@ header {
 
    
 .search{
-  width: 110px;
+  width: 100px;
   margin-left: 5px;
-  font-size: 10px;
+  font-size: 9px;
   padding: 5px;
 }
 
 
 .logo img{
-    width: 80px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 70px;
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    top: 12px;
+    left: 50px;
 }
 
 .toggle_btn{

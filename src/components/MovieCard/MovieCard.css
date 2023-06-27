@@ -1,0 +1,28 @@
+
+.MovieCard{
+   
+    width: 140px;
+    text-align: center;
+    margin:  0 5px 30px 5px;
+    min-width: 140px;
+  
+}
+
+.MovieCard:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    opacity:0.9 ;
+}
+
+.MovieCard img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.MovieCard p{
+   color: white;
+}
+
+.MovieCard a{
+    text-decoration: none;
+}
