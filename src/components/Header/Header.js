@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Header.css';
 
+import image from ".../Assets/doguito.svg"
+
 const Header = () => {
 
     /* En un proyecto normal (no react) lo haria asi
@@ -47,7 +49,7 @@ const Header = () => {
                     <li><a href="#">Contact</a></li>
                     <li><a href="#" className="action_btn">Get Started</a></li>
                 </div>
-
+                <img className="header__logo" src={image} alt="doguito" />
             </header>
 
 }
