@@ -6,7 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-   background-color: rgb(64, 63, 68);
+   /* background-color: rgba(33,38,52,255); */
+   background-image: linear-gradient(to right bottom, #040404, #0c0b14, #11111e, #131628, #131a33, #111c3d, #0e1d46, #0a1f50, #0e1d5a, #181a63, #25146a, #340770);
+   background-position: center;/*centro la imagen*/
+   background-attachment: fixed;
+   background-size: cover;/**/
 }
 
 

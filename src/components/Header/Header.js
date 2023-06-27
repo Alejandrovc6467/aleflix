@@ -1,66 +1,52 @@
-import { useState } from 'react';
-import './Header.css';
-
-import image from ".../Assets/doguito.svg"
+import { useState } from 'react'
+import './Header.css'
 
 const Header = () => {
 
-    /* En un proyecto normal (no react) lo haria asi
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
+    const [active, setActive] = useState("dropdown_menu");
+    const [iconBt, setIconBt] = useState("fa-solid fa-bars");
+ 
+    const [navbar, setNavbar] = useState("navbar")
 
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 10) {
+          setNavbar("navbar scrollDown")
+        } else {
+            setNavbar("navbar")
+        }
+    });
 
-        toggleBtnIcon.classList = isOpen? 'fa-solid fa-xmark':'fa-solid fa-bars'
-    }
-    */
-
-   const [active, setActive] = useState("dropdown_menu");
-   const [iconBt, setIconBt] = useState("fa-solid fa-bars");
-
-   const navToggle = () => {
+    const navToggle = () => {
         active === "dropdown_menu" ? setActive("dropdown_menu open"): setActive("dropdown_menu")
         active ===  "dropdown_menu" ? setIconBt("fa-solid fa-xmark"): setIconBt("fa-solid fa-bars")
-   }
+    }
 
-    return   <header>
 
-                <div className="navbar">
-                    <div className="logo"><a href="#">Alejandro</a></div>
-                    <ul className="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <a href="#" className="action_btn">Get Started</a>
-                    <div onClick={navToggle} className="toggle_btn">
-                        <i className={iconBt}></i>
-                    </div>
-                </div>
+    return <header>
 
-                <div className={active}>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" className="action_btn">Get Started</a></li>
-                </div>
-                <img className="header__logo" src={image} alt="doguito" />
-            </header>
+        <div className={navbar} >
 
+            <div className='navbar_izq'>
+                <div onClick={navToggle} className="toggle_btn"><i className={iconBt}></i></div>
+                <div className="logo"><a href="#"> <img src="img/Logo.png" alt='logo' /></a></div>
+            </div>
+           
+           <div className='navbar_der'>
+                <input className='search' type='text' placeholder ="¿Qué estás buscando?"></input>
+                <div className="account"><a href="#"><i className="fa-regular fa-circle-user" ></i></a></div>
+           </div>
+           
+           
+        </div>
+
+        <div className={active}>
+            <li><a href="#">Comedia</a></li>
+            <li><a href="#">Accion</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li><a href="#">Ficcion</a></li>
+        </div>
+
+    </header>
 }
 
-
-
-
-
-
-
 export default Header
-
-
-
