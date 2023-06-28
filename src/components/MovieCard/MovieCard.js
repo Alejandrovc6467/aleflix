@@ -6,7 +6,7 @@ const MovieCard = ( props ) => {
 
     const {id, title, poster_path, backdrop_path} = props.datos
     
-    const imageUrl = "https://image.tmdb.org/t/p/w300"+ poster_path
+    const imageUrl = "https://image.tmdb.org/t/p/original"+ poster_path
     //const backimageUrl = "https://image.tmdb.org/t/p/w300"+ backdrop_path
     //<img src={backimageUrl} alt={title}/>
     return <div className="MovieCard">

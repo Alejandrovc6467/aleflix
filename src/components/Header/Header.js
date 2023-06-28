@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './Header.css'
+import { Link } from "react-router-dom"
+
 
 const Header = () => {
 
@@ -28,7 +30,7 @@ const Header = () => {
 
             <div className='navbar_izq'>
                 <div onClick={navToggle} className="toggle_btn"><i className={iconBt}></i></div>
-                <div className="logo"><a href="#"> <img src="img/Logo.png" alt='logo' /></a></div>
+                <div className="logo"><Link to="/"> <img src="img/Logo.png" alt='logo' /></Link></div>
             </div>
            
            <div className='navbar_der'>

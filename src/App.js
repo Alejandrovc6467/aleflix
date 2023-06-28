@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './Pages/Home';
-import MovieDetails from './Pages/MovieDetails';
+import Home from './Pages/Home/Home';
+import MovieDetails from './Pages/MovieDetails/MovieDetails';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -19,17 +19,9 @@ function App() {
 
         <Routes>
 
-          <Route path='/'  element={ <Home/> }>
-            holallasa
-          </Route>
+          <Route path='/'  element={ <Home/> }> </Route>
 
-          <Route path='/movie/:movieId'  element={  <MovieDetails/> }>
-             
-          </Route>
-
-          <Route path='/hom'>
-          
-          </Route>
+          <Route path='/movie/:movieId'  element={  <MovieDetails/> }> </Route>
 
         </Routes>
 
@@ -38,8 +30,6 @@ function App() {
 
       </Router>
       
-      
-     
     </>
     
   );

@@ -1,0 +1,30 @@
+
+
+.MovieDetails{
+   
+    width: 100%;
+}
+
+
+.MovieDetails img{
+   width: 100%;
+   height: 100vh;
+
+}
+
+
+
+
+
+@media all and (max-width:1000px) {
+
+   
+    .MovieDetails img{
+        width: 100%;
+        height: auto;
+     
+     }
+    
+       
+    
+    }

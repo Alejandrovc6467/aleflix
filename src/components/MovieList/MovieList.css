@@ -1,12 +1,13 @@
 
 
-.home{
-    
+.MovieList{
+    /* background-color: rgba(218, 165, 32, 0.589); */
     padding-top: 60px;
     /*de aqui hacia abajo los tengo que quitar*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*ajustes por mientras, hacer un componente categoria y uno head*/
